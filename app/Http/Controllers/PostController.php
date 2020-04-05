@@ -14,11 +14,14 @@ class PostController extends Controller
     public function index()
     {
         $posts=[
-            ['title' => 'Hola mundo'],
+            ['title' => 'Post 1', 'id' => '1', 'url' => 'post/holaMundo1', 'content' => 'Hola mundo - contenido 1', 'posted' => 'yes', 'category_id' => '1'],
+            ['title' => 'Post 2', 'id' => '2', 'url' => 'post/holaMundo2', 'content' => 'Hola mundo - contenido 2', 'posted' => 'yes', 'category_id' => '2'],
+            ['title' => 'Post 3', 'id' => '3', 'url' => 'post/holaMundo3', 'content' => 'Hola mundo - contenido 3', 'posted' => 'no', 'category_id' => '1'],
+            ['title' => 'Post 4', 'id' => '4', 'url' => 'post/holaMundo4', 'content' => 'Hola mundo - contenido 4', 'posted' => 'yes', 'category_id' => '3'],
         ];
         return view ('posts', compact('posts'));
     }
-
+    
     /**
      * Show the form for creating a new resource.
      *
